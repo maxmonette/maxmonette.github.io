@@ -21,5 +21,37 @@
     <li><a href="https://www.researchgate.net/profile/Maxime-Monette">ResearchGate</a></li>
     <li><a href="https://github.com/maxmonette">GitHub</a></li>
   </ul>
+
+  <p class="toggle-title" onclick="toggleList()">
+    ▶ Click to show/hide publications
+  </p>
+
+  <ol id="myList" class="hidden">
+    <li> Monette, M., et al., ``Morpheus GO-2 IOD: In-orbit Demonstration of a 40-Thruster FEEP System", \textit{39th IEPC Proceedings} (2025)<li>
+    <li> Monette, M., et al., ``Vacuum pendulum test for a modified Kaluza–Klein theory", \textit{International Journal of Modern Physics A} (2024)<li>
+    <li> Monette, M., et al., ``Centrifugal balance for the detection of mass fluctuations in advanced propulsion concepts", \textit{Acta Astronautica} 212, pp. 270-283 (2023)<li>
+    <li> Monette, M., et al., ``Experimental investigation of Mach-Effect thrusters on torsion balances", \textit{Acta Astronautica} 182, pp. 531–546 (2021)<li>
+    <li> Kößling, M., Monette, M., et al., ``The space drive project–thrust balance development and new measurements of the mach-effect and EMDrive <li>thrusters", \textit{Acta Astronautica} 161, pp. 139–152 (2019)
+    <li> Monette, M., et al., ``5 N Scale Preliminary Thruster Test with an ADN-based Monopropellant", \textit{KSPE Journal} 22, 2, pp. 29-37 (2018) <li>
+    <li> Monette, M., et al., ``Transfer Trajectory Analysis for a Korean Lunar Orbiter Mission", \textit{Korean Aerospace Society Conference}, pp. 733-736 (2015).<li>
+  </ol>
+
+  <script>
+    function toggleList() {
+      const list = document.getElementById("myList");
+      const title = document.querySelector(".toggle-title");
+
+      list.classList.toggle("hidden");
+
+      if (list.classList.contains("hidden")) {
+        title.textContent = "▶ Click to show/hide list";
+      } else {
+        title.textContent = "▼ Click to show/hide list";
+      }
+    }
+  </script>
+
+
+
 </body>
 </html>
